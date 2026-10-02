@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    min-width: 750px;
+}
+
+.table th, .table td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.table td:last-child {
+    min-width: 140px;
+}
+
+.editButton {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table {
+        min-width: 700px;
+    }
+
+    main.container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
